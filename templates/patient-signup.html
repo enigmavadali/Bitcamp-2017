@@ -1,0 +1,260 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Health Buddy</title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLE CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />    
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+</head>
+<body >
+    
+    <div class="navbar navbar-inverse navbar-fixed-top" >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">HEALTH BUDDY</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                     <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="portfolio.html">RECENT HEALTH CAMPS</a></li>
+                  
+                    
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+   <!--/.NAVBAR END-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Patient Sign up</title>
+
+    <!-- Bootstrap -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/contain.css" rel="stylesheet">
+
+<style>
+	body{
+		height:100%;
+   width:100%;
+   background-image:url(../static/img/Patient1.jpg);/*your background image*/  
+   background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
+   background-size:cover;/*this sets the image to fullscreen covering the whole screen*/  
+   /*css hack for ie*/     
+   filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../static/img/Patient1.jpg',sizingMethod='scale');
+   -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../static/img/Patient1.jpg',sizingMethod='scale')";
+	}
+</style>
+     
+  </head>
+  <body>
+    <!--<h1 class="text-danger">Hello,1 world!</h1>
+	 <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="\C:\Program Files\bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>-->
+	<br><br/><br><br/><br><br/>
+	
+	<div class="container">
+		
+			<div class="row">
+				<div class="col-xs-offset-1 col-xs-6">
+					<form class="form-horizontal"  method="POST" action="{{url_for('patient_put')}}">
+						<h2>Enter Your Details</h2>
+						<div class="form-group">
+							<label for="inputUserName" class="control-label col-sm-2">Name</label>
+							<div class="col-sm-10">
+								<input class="form-control" name="pname" placeholder="Login Username"
+										type="text" id="inputUserName" />
+							</div>
+						</div>
+						<br>
+						
+						<div class="form-group">
+							<label for="inputid "class="control-label col-sm-2">UID</label>
+							<div class="col-sm-10">
+								<input class="form-control" name="pid" placeholder="Enter Your UId"
+										type="text" id="inputid"/>
+							</div>
+						</div>
+						<br>
+						
+						<div class="form-group">
+							<label for="input-no"class="control-label col-sm-2">Contact No:</label>
+							<div class="col-sm-10">
+								<input class="form-control" name="cno" placeholder="Enter Degree"
+										type="text" id="input-no"/>
+							</div>
+						</div>
+						<br>
+						
+						<div class="form-group">
+							<label for="input-city"class="control-label col-sm-2">City Name</label>
+							<div class="col-sm-10">
+								<input class="form-control" name="pcityname" placeholder="Enter Degree"
+										type="text" id="input-city"/>
+							</div>
+						</div>
+						<br>
+						
+						<div class="form-group">
+							<label for="input-mailid"class="control-label col-sm-2">Email-id</label>
+							<div class="col-sm-10">
+								<input class="form-control" name="pmailid" placeholder="Enter valid email-id"
+										type="email" id="input-id"/>
+									
+							</div>
+						</div>
+						<br>
+						
+						<div class="form-group">
+							<label for="input-pin" class="control-label col-sm-2">Pin-Code</label>
+							<div class="col-sm-10">
+								<input class="form-control" name="p-Pin-code" placeholder="Enter valid email-id"
+										type="text" id="input-pin"/>
+									
+							</div>
+						</div>
+						<br>
+						
+						<div class="form-group">
+							<label for="input-Street" class="control-label col-sm-2">Street Name</label>
+							<div class="col-sm-10">
+								<input class="form-control" name="pstreet" placeholder="Enter Street name"
+										type="text" id="input-Street"/>
+									
+							</div>
+						</div>
+						<br>
+						
+						<div class="form-group">
+							<label for="input-house" class="control-label col-sm-2">House details</label>
+							<div class="col-sm-10">
+								<input class="form-control" name="phouse" placeholder="Enter house datails"
+										type="text" id="input-Street"/>
+									
+							</div>
+						</div>
+						<br>
+						<div class="form-group">
+							<label for="input-Street" class="control-label col-sm-2">Patient History</label>
+							<div class="col-sm-10">
+								<textarea rows="6" cols="62" name="phis" >
+								</textarea>
+							</div>
+						</div>
+						
+						<!--
+						<div class="form-group">
+							<label for="inputPassword" class="control-label col-sm-2">Password</label>
+							<div class="col-sm-10">
+								<input class="form-control" name="pass" placeholder="Enter Password"
+										type="password" id="inputPassword" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2">Re-Enter Password</label>
+							<div class="col-sm-10">
+								<input class="form-control" placeholder="Re-Enter Password"
+										type="password" id="pass1"/>
+							</div>
+						</div>-->
+						
+						<div class="form-group">
+						<label for="inputPassword" class="control-label col-sm-2">Password</label>
+						<div>
+						  <div class="form-group col-sm-10">
+							<input type="password" data-minLength="6" class="form-control" name="ppass" id="inputPassword" placeholder="Password" required>
+							<div class="help-block">Minimum of 6 characters</div>
+						  </div>
+						  <!--
+						</div>
+						<label for="inputPassword" class="control-label col-sm-2">Re-Enter Password</label>
+						<div>
+						  <div class="form-group col-sm-10">
+							<input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops" placeholder="Re-Enter Password" required>
+							
+						  </div>
+						  -->
+						</div>
+						<div class="form-group col-sm-10">
+							
+							<!--<input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>-->
+							<div class="help-block with-errors"></div>
+						 </div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-5 col-sm-10">
+								<button type="submit" class="btn btn-default" onclick="check()">Sign up</button>
+							</div>
+						</div>
+					
+					</form>
+				</div>
+			</div>
+	
+    <section id="footer-sec" >
+             
+            <div class="container">
+           <div class="row  pad-bottom" >
+            <div class="col-md-4">
+                <h4> <strong>ABOUT COMPANY</strong> </h4>
+                            <p>
+                               Your Ultimate Life-long Health companion
+                            </p>
+                </div>
+               <div class="col-md-4">
+                    <h4> <strong>SOCIAL LINKS</strong> </h4>
+                   <p>
+                     <a href="#"><i class="fa fa-facebook-square fa-3x"  ></i></a>  
+                        <a href="#"><i class="fa fa-twitter-square fa-3x"  ></i></a>  
+                        <a href="#"><i class="fa fa-linkedin-square fa-3x"  ></i></a>  
+                       <a href="#"><i class="fa fa-google-plus-square fa-3x"  ></i></a>  
+                   </p>
+                </div>
+            
+               </div>
+            </div>
+    </section>         
+    <!--/.FOOTER END-->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="assets/plugins/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/plugins/bootstrap.js"></script>
+  <!-- CUSTOM SCRIPTS  -->
+    <script src="assets/js/custom.js"></script>
+		</body>
+</html>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				

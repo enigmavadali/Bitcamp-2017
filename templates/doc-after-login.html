@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Health Buddy</title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLE CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />    
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+</head>
+<body >
+    
+    <div class="navbar navbar-inverse navbar-fixed-top" >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">HEALTH BUDDY</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                     <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="portfolio.html">RECENT HEALTH CAMPS</a></li>
+                  
+                    
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+   <!--/.NAVBAR END-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doctor Sign up</title>
+
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+	body{
+		height:100%;
+   width:100%;
+   background-image:url(../static/img/Doc-succ.jpg);/*your background image*/  
+   background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
+   background-size:cover;/*this sets the image to fullscreen covering the whole screen*/  
+   /*css hack for ie*/     
+   filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../static/img/Doc-succ.jpg',sizingMethod='scale');
+   -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../static/img/Doc-succ.jpg',sizingMethod='scale')";
+	}
+</style>
+
+     
+  </head>
+  <body>
+	 <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="\C:\Program Files\bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>-->
+	<br><br/><br><br/>
+	
+	<div class="container">
+		
+			<div class="row">
+				<div class="col-xs-6">
+					<form class="form-horizontal" method="POST" action="{{ url_for('check_id') }}">
+					<h2 >Login succesfull!!</h2><br/><br/>
+					<label for="inputUserName" class="control-label col-sm-3"><h3>Enter Uid</h3></label><br/>
+						<div class="col-sm-9">
+							<input class="form-control" name="U-id" placeholder="Enter Uid of patient"
+									type="text" id="inputUserName" />
+						</div><br/><br/><br/>
+						<div class="form-group">
+							<div class="col-lg-offset-5 col-sm-12">
+								<button type="submit" class="btn btn-primary" >Get patient details</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+	</div>
+  
+    <section id="footer-sec" >
+             
+            <div class="container">
+           <div class="row  pad-bottom" >
+            <div class="col-md-4">
+                <h4> <strong>ABOUT COMPANY</strong> </h4>
+                            <p>
+                               Your Ultimate Life-long Health companion
+                            </p>
+                </div>
+               <div class="col-md-4">
+                    <h4> <strong>SOCIAL LINKS</strong> </h4>
+                   <p>
+                     <a href="#"><i class="fa fa-facebook-square fa-3x"  ></i></a>  
+                        <a href="#"><i class="fa fa-twitter-square fa-3x"  ></i></a>  
+                        <a href="#"><i class="fa fa-linkedin-square fa-3x"  ></i></a>  
+                       <a href="#"><i class="fa fa-google-plus-square fa-3x"  ></i></a>  
+                   </p>
+                </div>
+            
+               </div>
+            </div>
+    </section>         
+    <!--/.FOOTER END-->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="assets/plugins/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/plugins/bootstrap.js"></script>
+  <!-- CUSTOM SCRIPTS  -->
+    <script src="assets/js/custom.js"></script>
+	</body>
+</html>
